@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Search here .."
+            android:paddingTop="220dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_search"
+            android:textColor="@color/lightgrey"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/edt_headFAQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FAQs"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:id="@+id/edt_content1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Any questions? We are here to help"
+            android:fontFamily="@font/poppinssemibold"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:paddingTop="10dp" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="360dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center_horizontal"
+            tools:context=".faq">
+
+            <Button
+                android:id="@+id/faq1"
+                android:layout_width="360dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="120dp"
+                android:background="@null"
+                android:drawableEnd="@drawable/ic_baseline_arrow_drop_down"
+                android:fontFamily="@font/poppinsregular"
+                android:gravity="center_vertical"
+                android:text="How long a trip pass is valid ?"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/faq2"
+                android:layout_width="360dp"
+                android:layout_height="30dp"
+                android:text="Whether Trips can be refunded ?"
+                android:background="@null"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:drawableEnd="@drawable/ic_baseline_arrow_drop_down"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="150dp"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/poppinsregular"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/faq3"
+                android:layout_width="360dp"
+                android:layout_height="40dp"
+                android:text="What is a Kochi1 card ? What are the advantages of Kochi1 card ?"
+                android:background="@null"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:drawableEnd="@drawable/ic_baseline_arrow_drop_down"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="180dp"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/poppinsregular"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/faq4"
+                android:layout_width="360dp"
+                android:layout_height="40dp"
+                android:text="Discount is calculated on what basis and who is giving this discount? Can the discount percentage change ?"
+                android:background="@null"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:drawableEnd="@drawable/ic_baseline_arrow_drop_down"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="220dp"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/poppinsregular"
+                android:textAllCaps="false" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/edt_content2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do you think we missed any ?"
+            android:fontFamily="@font/poppinssemibold"
+            android:textSize="12dp"
+            android:textColor="@color/kmrlgreen"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="600dp"
+            android:paddingTop="10dp" />
+
+        <Button
+            android:id="@+id/btn_addq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Questions"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            android:layout_marginLeft="245dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="false"
+            android:gravity="left"
+            android:layout_marginTop="608dp" />
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav"
+        android:background="@drawable/round_corneer"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="2dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:labelVisibilityMode="unlabeled">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,19 +25,19 @@
         android:textSize="12dp"
         android:layout_marginLeft="50dp"
         android:layout_marginBottom="20dp"
-        android:fontFamily="@font/poppins_bold" />
+        android:fontFamily="@font/poppinsbold" />
 
     <TextView
         android:id="@+id/edt_text"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Login to Enjoy the Perks !"
         android:layout_below="@id/edt_text_connect"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Login to Enjoy the Perks !"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:layout_marginBottom="40dp"
-        android:textSize="16dp"
-        android:fontFamily="@font/poppins_semibold" />
+        android:textSize="16dp" />
 
     <EditText
         android:id="@+id/edt_email"
@@ -49,7 +49,7 @@
         android:textSize="13dp"
         android:textAlignment="center"
         android:textColor="@color/grey"
-        android:fontFamily="@font/poppins_regular"
+        android:fontFamily="@font/poppinsregular"
         android:background="@drawable/edt_background"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp" />
@@ -64,7 +64,7 @@
         android:textSize="13dp"
         android:textColor="@color/grey"
         android:textAlignment="center"
-        android:fontFamily="@font/poppins_regular"
+        android:fontFamily="@font/poppinsregular"
         android:background="@drawable/edt_background"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp" />
@@ -79,7 +79,7 @@
         android:background="@drawable/btn_background"
         android:textColor="@color/white"
         android:textSize="15dp"
-        android:fontFamily="@font/poppins_semibold"
+        android:fontFamily="@font/poppinssemibold"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp" />
 
@@ -91,7 +91,7 @@
         android:layout_below="@id/btnLogin"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:fontFamily="@font/poppins_semibold" />
+        android:fontFamily="@font/poppinssemibold" />
 
     <TextView
         android:id="@+id/edt_text_account"
@@ -100,22 +100,22 @@
         android:text="Don't have an account ?"
         android:paddingTop="10dp"
         android:layout_below="@id/edt_text_or"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="90dp"
         android:textColor="@color/black"
         android:textSize="12dp"
-        android:fontFamily="@font/poppins_semibold" />
+        android:fontFamily="@font/poppinssemibold" />
 
     <Button
-        android:id="@+id/btnSignup"
-        android:layout_width="120dp"
+        android:id="@+id/btnsign"
+        android:layout_width="80dp"
         android:layout_height="30dp"
         android:layout_below="@id/edt_text_or"
         android:text="Sign Up"
-        android:layout_marginLeft="215dp"
-        android:padding="5dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:background="@drawable/btn_background"
-        android:textColor="@color/white"
-        android:textSize="11dp"
+        android:background="@null"
+        android:textColor="@color/kmrlgreen"
+        android:textSize="16dp"
+        android:layout_marginLeft="245dp"
+        android:fontFamily="@font/poppinsbold"
         android:layout_marginTop="5dp" />
+
 </RelativeLayout>

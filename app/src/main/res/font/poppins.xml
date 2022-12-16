@@ -3,21 +3,21 @@
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/poppins_black" />
+        android:font="@font/poppinsblack" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/poppins_bold" />
+        android:font="@font/poppinsbold" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/poppins_bolditalic" />
+        android:font="@font/poppinsbolditalic" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/poppins_regular" />
+        android:font="@font/poppinsregular" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/poppins_semibold" />
+        android:font="@font/poppinssemibold" />
 </font-family>
