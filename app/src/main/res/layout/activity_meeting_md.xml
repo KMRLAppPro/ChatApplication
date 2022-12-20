@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MeetingMD">
+    tools:context=".MeetingMD"
+    android:fitsSystemWindows="true">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -28,15 +29,287 @@
             android:id="@+id/md_content1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/mdcontent1"
             android:layout_below="@id/meeting_heading"
-            android:padding="20dp"
-            android:layout_marginTop="20dp"
             android:layout_marginHorizontal="20dp"
-            android:fontFamily="@font/poppinsregular"
-            android:textSize="10dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/text_bg"
-            android:textColor="@color/black" />
+            android:fontFamily="@font/poppinsregular"
+            android:padding="20dp"
+            android:text="@string/mdcontent1"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/firstname_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:layout_below="@id/md_content1"
+            android:fontFamily="@font/poppinsblack"
+            android:layout_marginStart="20dp"
+            android:paddingTop="10dp"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/lastname_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:layout_below="@id/md_content1"
+            android:fontFamily="@font/poppinsblack"
+            android:layout_marginStart="210dp"
+            android:paddingTop="10dp"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/firstname"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="260dp"
+            android:layout_marginStart="20dp"
+            android:ems="10"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:background="@drawable/bg_edittext"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.151"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="260dp"
+            android:layout_marginStart="210dp"
+            android:background="@drawable/bg_edittext"
+            android:ems="10"
+            android:textSize="12sp"
+            android:padding="10dp"
+            android:fontFamily="@font/poppinsregular"
+
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.919"
+            app:layout_constraintStart_toStartOf="@id/firstname"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/phoneno_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:layout_below="@id/firstname"
+            android:fontFamily="@font/poppinsblack"
+            android:layout_marginStart="20dp"
+            android:paddingTop="10dp"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/emailid_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:layout_below="@id/lastname"
+            android:fontFamily="@font/poppinsblack"
+            android:layout_marginStart="210dp"
+            android:paddingTop="10dp"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="325dp"
+            android:background="@drawable/bg_edittext"
+            android:ems="10"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="+91-0000000000"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.151"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="325dp"
+            android:layout_marginStart="210dp"
+            android:background="@drawable/bg_edittext"
+            android:ems="10"
+            android:textSize="12sp"
+            android:padding="10dp"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="enter@gmail.com"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.919"
+            app:layout_constraintStart_toStartOf="@id/lastname"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/address_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Office / Home Address"
+            android:layout_below="@id/phone"
+            android:fontFamily="@font/poppinsblack"
+            android:layout_marginStart="20dp"
+            android:paddingTop="10dp"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/home_address"
+            android:layout_width="370dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="395dp"
+            android:background="@drawable/bg_edittext"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.151"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/purpose_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home_address"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppinsblack"
+            android:paddingTop="5dp"
+            android:text="Purpose of Meet"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/purpose_meet"
+            android:layout_width="370dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="480dp"
+            android:background="@drawable/bg_edittext"
+            android:ems="10"
+            android:fontFamily="@font/poppinsregular"
+
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.151"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/date_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appointment Date"
+            android:layout_below="@id/purpose_meet"
+            android:fontFamily="@font/poppinsblack"
+            android:layout_marginStart="20dp"
+            android:paddingTop="10dp"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/idTVSelectedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date_heading"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="5dp"
+            android:gravity="start"
+            android:padding="10dp"
+            android:text="DD-MM-YYYY"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/idBtnPickDate"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date_heading"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="20dp"
+            android:drawableStart="@drawable/ic_baseline_date"
+            android:fontFamily="@font/poppinsregular"
+            android:textAllCaps="false"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/time_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favourable Time"
+            android:layout_below="@id/purpose_meet"
+            android:fontFamily="@font/poppinsblack"
+            android:layout_marginStart="170dp"
+            android:paddingTop="10dp"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:id="@+id/time_layout"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@id/purpose_meet">
+
+            <Button
+                android:id="@+id/time_option1"
+                android:layout_width="72dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:text="9-10 AM"
+                android:textSize="12sp"
+                android:background="@drawable/time_btn_selector"
+                android:fontFamily="@font/poppinsregular"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/time_option2"
+                android:layout_width="72dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:text="10-11 AM"
+                android:textSize="12sp"
+                android:background="@drawable/time_btn_selector"
+                android:fontFamily="@font/poppinsregular"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/time_option3"
+                android:layout_width="72dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:text="11-12 PM"
+                android:textSize="12sp"
+                android:background="@drawable/time_btn_selector"
+                android:fontFamily="@font/poppinsregular"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/request_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_background"
+            android:fontFamily="@font/poppinssemibold"
+            android:padding="10dp"
+            android:text="Request Appointment"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
 
     </RelativeLayout>
 
